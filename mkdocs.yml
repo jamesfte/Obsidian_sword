@@ -1,5 +1,4 @@
-site_name: obsidian-mkdocs template
-
+site_name: Obsidian Sword
 theme:
     name: 'material'
     palette:
