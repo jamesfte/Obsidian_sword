@@ -1,4 +1,4 @@
-# Obsidian Notes
+# Obsidian sword
 
 Publish your public notes with MkDocs
 
