@@ -20,8 +20,8 @@ SQL Injection Types Overview
 > > > This injection attempts to generate an error message that can reveal database information.
 > <hr>
 >
-> > b. Union-based SQL Injection
-> >	Method: GET
+> b. Union-based SQL Injection
+> > Method: GET
 > >
 > > Before Injection:
 > >
