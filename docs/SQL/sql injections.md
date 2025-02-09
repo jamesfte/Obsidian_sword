@@ -15,8 +15,8 @@ SQL Injection Types Overview
 > >     vbnet
 > >   	 http://example.com/login?username=admin'%20AND%201=1;--&password=password
 > >
-> INFO:
-> > This injection attempts to generate an error message that can reveal database information.
+> > INFO:
+> > > This injection attempts to generate an error message that can reveal database information.
 > <hr>
 >
 > > b. Union-based SQL Injection
@@ -31,8 +31,8 @@ SQL Injection Types Overview
 > >     vbnet
 > >      http://example.com/login?username=admin'%20UNION%20SELECT%20username,%20password%20FROM%20users;--&password=password
 > >
-> INFO:
-> > This injection combines results from the original query with results from another table.
+> > INFO:
+> > > This injection combines results from the original query with results from another table.
 > <hr>
 <br>
 
