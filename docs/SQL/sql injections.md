@@ -208,7 +208,7 @@ injections with oracle built-in table:
 
 > to query database type and version:
 > >     +------------------+-------------------------+
-> >     | Database type    |          Query          |
+> >     | Database type    | Query                   |
 > >     +------------------+-------------------------+
 > >     | Microsoft, MySQL | SELECT @@version        |
 > >     |      Oracle      | SELECT * FROM v$version |
