@@ -18,7 +18,7 @@ SQL Injection Types Overview
 > > > INFO:
 > > > 
 > > > This injection attempts to generate an error message that can reveal database information.
-<hr>
+> <hr>
 >
 > > b. Union-based SQL Injection
 > >	Method: GET
@@ -32,7 +32,8 @@ SQL Injection Types Overview
 > >     vbnet
 > >      http://example.com/login?username=admin'%20UNION%20SELECT%20username,%20password%20FROM%20users;--&password=password
 > >
-> > INFO:
+> > > INFO:
+> > >
 > > > This injection combines results from the original query with results from another table.
 > <hr>
 <br>
