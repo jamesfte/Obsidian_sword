@@ -206,13 +206,14 @@ injections with oracle built-in table:
 
 <hr>
 
-to query database type and version:
-| Database type	   | Query                   |
-|------------------|-------------------------|
-| Microsoft, MySQL | SELECT @@version        |
-| Oracle	   | SELECT * FROM v$version |
-| PostgreSQL	   | SELECT version()        |
-
+to query database type and version:<br>
++------------------+-------------------------+<br>
+| Database type	   |          Query          |<br>
++------------------+-------------------------+<br>
+| Microsoft, MySQL | SELECT @@version        |<br>
+| Oracle	   | SELECT * FROM v$version |<br>
+| PostgreSQL	   | SELECT version()        |<br>
++------------------+-------------------------+<br>
 <hr>
 
 > get all table in non oracle:
