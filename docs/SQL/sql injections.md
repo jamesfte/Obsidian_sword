@@ -207,11 +207,11 @@ injections with oracle built-in table:
 <hr>
 
 to query database type and version:
-| Database type	|	Query |
-|---------------|-------|
-| Microsoft, MySQL |	SELECT @@version |
-| Oracle	|	SELECT * FROM v$version |
-| PostgreSQL	|	SELECT version() |
+| Database type	   | Query                   |
+|------------------|-------------------------|
+| Microsoft, MySQL | SELECT @@version        |
+| Oracle	   | SELECT * FROM v$version |
+| PostgreSQL	   | SELECT version()        |
 
 <hr>
 
