@@ -211,8 +211,8 @@ injections with oracle built-in table:
 > >     | Database type    |          Query          |
 > >     +------------------+-------------------------+
 > >     | Microsoft, MySQL | SELECT @@version        |
-> >     | Oracle	   | SELECT * FROM v$version |
-> >     | PostgreSQL       | SELECT version()        |
+> >     | Oracle---------- | SELECT * FROM v$version |
+> >     | PostgreSQL------ | SELECT version()        |
 > >     +------------------+-------------------------+
 <hr>
 
