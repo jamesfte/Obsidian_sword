@@ -50,8 +50,9 @@ SQL Injection Types Overview
 > >
 > >     bash
 > >      http://example.com/login?username=admin'%20AND%20SUBSTRING(password,1,1)='a'--&password=password
-> INFO:
-> > The attacker infers whether the condition is true or false based on the application's response.
+> > > INFO:
+> > > 
+> > > The attacker infers whether the condition is true or false based on the application's response.
 > <hr>
 >
 > b. Time-based Blind SQL Injection
@@ -64,8 +65,9 @@ SQL Injection Types Overview
 > >
 > >     bash
 > >      http://example.com/login?username=admin'%20AND%20IF(SUBSTRING(password,1,1)='p',SLEEP(5),0)--&password=password
-> INFO:
-> > The attacker uses a time delay to infer information based on how long the application takes to respond.
+> > > INFO:
+> > >
+> > > The attacker uses a time delay to infer information based on how long the application takes to respond.
 > <hr>
 <br>
 
@@ -79,7 +81,8 @@ SQL Injection Types Overview
 >
 >     vbnet
 >      http://example.com/login?username='; SELECT COUNT(*) FROM users; --&password=password
-> INFO:
+> > INFO:
+> > 
 > > This injection may not directly show results in the URL but relies on the database executing a command that sends data elsewhere (e.g., to an attacker-controlled server).
 > <hr>
 <br>
@@ -94,7 +97,8 @@ SQL Injection Types Overview
 >
 >     sql
 >      http://example.com/register?username=''); DROP TABLE users; --&password=securepass
-> INFO:
+> > INFO:
+> > 
 > > This injection involves storing a payload that executes later when the application uses the stored data.
 > <hr>
 <br>
