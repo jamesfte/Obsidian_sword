@@ -1,11 +1,10 @@
 padbuster cheat sheet
 
-template:
-<br>
-	basic usage:
+basic usage:
  <br>
+ 
 		padbuster <URL> <data> <block_size> -encoding <encoding_type>
-  <br>
+  reference:
   
 		<URL>: Target URL for the padding oracle attack.
 		<data>: Encrypted data (ciphertext) to manipulate.
@@ -15,8 +14,9 @@ template:
 <br>
 	Perl Command:
  <br>
+ 
 		perl padbuster.pl -u <URL> -d <data> -p <padding> -t <timeout> -v
-  <br>
+  reference:
   
 		-u <URL>: target URL
 		-d <data>: Encrypted data to manipulate
