@@ -207,6 +207,7 @@ injections with oracle built-in table:
 <hr>
 
 > to query database type and version:
+
 |------------------|-------------------------|
 | Database type    | Query                   |
 |------------------|-------------------------|
