@@ -15,10 +15,9 @@ SQL Injection Types Overview
 > >     vbnet
 > >   	 http://example.com/login?username=admin'%20AND%201=1;--&password=password
 > >
-
-> [!NOTE]  
-> This injection attempts to generate an error message that can reveal database information.
-
+> > > INFO:
+> > > 
+> > > This injection attempts to generate an error message that can reveal database information.
 > <hr>
 >
 > b. Union-based SQL Injection
@@ -33,10 +32,9 @@ SQL Injection Types Overview
 > >     vbnet
 > >      http://example.com/login?username=admin'%20UNION%20SELECT%20username,%20password%20FROM%20users;--&password=password
 > >
-
-> [!NOTE]  
-> This injection combines results from the original query with results from another table.
-
+> > > INFO:
+> > >
+> > > This injection combines results from the original query with results from another table.
 > <hr>
 <br>
 
@@ -52,10 +50,9 @@ SQL Injection Types Overview
 > >
 > >     bash
 > >      http://example.com/login?username=admin'%20AND%20SUBSTRING(password,1,1)='a'--&password=password
-
-> [!NOTE]  
-> The attacker infers whether the condition is true or false based on the application's response.
-
+> > > INFO:
+> > > 
+> > > The attacker infers whether the condition is true or false based on the application's response.
 > <hr>
 >
 > b. Time-based Blind SQL Injection
@@ -68,10 +65,9 @@ SQL Injection Types Overview
 > >
 > >     bash
 > >      http://example.com/login?username=admin'%20AND%20IF(SUBSTRING(password,1,1)='p',SLEEP(5),0)--&password=password
-
-> [!NOTE]  
-> The attacker uses a time delay to infer information based on how long the application takes to respond.
-
+> > > INFO:
+> > >
+> > > The attacker uses a time delay to infer information based on how long the application takes to respond.
 > <hr>
 <br>
 
@@ -85,10 +81,9 @@ SQL Injection Types Overview
 >
 >     vbnet
 >      http://example.com/login?username='; SELECT COUNT(*) FROM users; --&password=password
-
-> [!NOTE]  
-> This injection may not directly show results in the URL but relies on the database executing a command that sends data elsewhere (e.g., to an attacker-controlled server).
-
+> > INFO:
+> > 
+> > This injection may not directly show results in the URL but relies on the database executing a command that sends data elsewhere (e.g., to an attacker-controlled server).
 > <hr>
 <br>
 
@@ -102,10 +97,9 @@ SQL Injection Types Overview
 >
 >     sql
 >      http://example.com/register?username=''); DROP TABLE users; --&password=securepass
-
-> [!NOTE]  
-> This injection involves storing a payload that executes later when the application uses the stored data.
-
+> > INFO:
+> > 
+> > This injection involves storing a payload that executes later when the application uses the stored data.
 > <hr>
 <br>
 
@@ -123,7 +117,7 @@ Conclusion
 
 <hr>
 
-> [!WARNING]  
+> [!WARNING]
 > Take care when injecting the condition OR 1=1 into a SQL query. Even if it appears to be harmless in the context you're injecting into, it's common for applications to use data from a single request in multiple different queries. If your condition reaches an UPDATE or DELETE statement, for example, it can result in an accidental loss of data.
 
 <hr>
