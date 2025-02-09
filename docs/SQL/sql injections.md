@@ -15,9 +15,10 @@ SQL Injection Types Overview
 > >     vbnet
 > >   	 http://example.com/login?username=admin'%20AND%201=1;--&password=password
 > >
-> > INFO:
+> > > INFO:
+> > > 
 > > > This injection attempts to generate an error message that can reveal database information.
-> <hr>
+<hr>
 >
 > > b. Union-based SQL Injection
 > >	Method: GET
